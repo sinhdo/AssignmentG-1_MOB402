@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐĂNG NHẬP</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+<style>
+    .login {
+        height: 250px;
+        width: 500px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 50px;
+        background-color: whitesmoke;
+    }
+
+    h1 {
+        color: #868787;
+        font-family: sans-serif;
+    }
+
+    input {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        padding-left: 10px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row justify-content-around">
+                     <div class="login">
+                <h1>LOGIN</h1>
+                <form action="/trangchu" method="get">
+                    <input type="email" name="emaillg" id="email"  placeholder="Nhập email đăng nhập" required  value={{email}}>
+                    <input type="password" name="passlg"  id="pass"  placeholder="Nhập mật khẩu"  required value={{pass}}>
+                    <input onclick="check()" style="background-color: #45a049;color: white;" type="submit" value="ĐĂNG NHẬP">
+                </form>
+            </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+</body>
+
+</html>

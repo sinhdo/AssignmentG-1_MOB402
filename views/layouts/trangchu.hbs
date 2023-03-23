@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TRANG CHỦ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="/ToastAlert.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            padding: 5px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 96%;
+            margin: 30px;
+            margin-right: 160px;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        h2 {
+            margin-left: 30px;
+        }
+
+        .add {
+
+            margin: 5px 0 0 30px;
+            background-color: rgb(109, 109, 233);
+            color: white;
+        }
+
+        .i {
+            margin-left: 40px;
+        }
+
+        .t:hover {
+            cursor: pointer;
+        }
+        td img{
+            width: 40px;
+            height: 40px;
+        }
+        td:hover img{
+            transform: scale(1.10);
+            
+        }
+    </style>
+
+    <div class="w3-container w3-green">
+        <h1>Quản Lý Bán Hàng</h1>
+        <p>Trang Chủ Bán Hàng</p>
+    </div>
+    <h2>Danh sách người dùng</h2>
+    <button class="add">Thêm người dùng</button>
+
+    <table>
+        <tr>
+            <th>Tên người dùng</th>
+            <th>Email</th>
+            <th>Khác</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>MariaAnders@gmail.com</td>
+            <td>
+                <i class="fa-solid fa-pen-to-square t"></i>
+                <i class="fa-solid fa-person-circle-minus i t"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>FranciscoChang@gmail.com</td>
+            <td>
+                <i class="fa-solid fa-pen-to-square t"></i>
+                <i class="fa-solid fa-person-circle-minus i t"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>RolandMendel@gmail.com</td>
+            <td>
+                <i class="fa-solid fa-pen-to-square t"></i>
+                <i class="fa-solid fa-person-circle-minus i t"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>HelenBennett@gmail.com</td>
+            <td>
+                <i class="fa-solid fa-pen-to-square t"></i>
+                <i class="fa-solid fa-person-circle-minus i t"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>YoshiTannamuri@gmail.com</td>
+             <td>
+                <i class="fa-solid fa-pen-to-square t"></i>
+                <i class="fa-solid fa-person-circle-minus i t"></i>
+                </td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>GiovanniRovelli@gmail.com</td>
+            <td>
+                <i class="fa-solid fa-pen-to-square t"></i>
+                <i class="fa-solid fa-person-circle-minus i t"></i>
+            </td>
+        </tr>
+    </table>
+
+
+
+     <h2>Danh sách sản phẩm</h2>
+    <button class="add">Thêm sản phẩm</button>
+
+    <table>
+        <tr>
+            <th>Mã sản phẩn</th>
+            <th>Tên</th>
+            <th>Đơn giá</th>
+            <th>Hình ảnh</th>
+            <th>Màu sắc</th>
+            <th>Người Bán</th>
+        </tr>
+          <tr>
+            <td>SP01</td>
+            <td>Áo thun nam</td>
+            <td>349000 VNĐ</td>
+            <td><img src="https://laz-img-sg.alicdn.com/p/ef9034ca4487367cde069d401855bfe7.jpg"></td>
+            <td>Đen trắng</td>
+            <td>
+                 Ernst Handel   
+            </td>
+        </tr>
+        <tr>
+            <td>SP02</td>
+            <td>Áo khoác nữ</td>
+            <td>299000 VNĐ</td>
+            <td><img src="https://cf.shopee.vn/file/4ce3e35bde41a5583350f207d4dd2924"></td>
+            <td>Xanh hồng</td>
+            <td>
+                Laughing Bacchus Winecellars   
+            </td>
+        </tr>
+         <tr>
+            <td>SP03</td>
+            <td>Áo local brand</td>
+            <td>129000 VNĐ</td>
+            <td><img src="https://bumshop.com.vn/wp-content/uploads/2021/07/ao-loang-Dirty-coin-local-brand-ao-thun.jpg"></td>
+            <td>Vàng xan hồng ...</td>
+            <td>
+                 Magazzini Alimentari Riuniti  
+            </td>
+        </tr>
+    </table>
+
+</body>
+ <script>
+    toast('success', 'login success');
+     Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+          })
+  </script>
+
+</html>
